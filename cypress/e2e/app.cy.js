@@ -16,7 +16,7 @@ describe("React TodoMVC", () => {
         
     })
 
-    it("adds three todos", () => {
+    it.only("adds three todos", () => {
         cy.createDefaultTodos()
         cy.get(".todo-list li").should("have.length", 3)
     })
